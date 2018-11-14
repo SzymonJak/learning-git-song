@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Spicy+Rice");
 nav, footer {
   background-color: #2f3640;
-  opacity: .7;
+  opacity: .8;
   height: 3em;
   line-height: 3em;
   text-align: center; }
@@ -38,16 +38,26 @@ nav i {
     font-weight: bold;
     font-size: 200%; }
 
-section {
-  padding: .5em;
-  text-align: center; }
-  section p {
+.verse {
+  width: 90%;
+  margin: 3vw auto;
+  padding: 1em;
+  text-align: center;
+  background-color: rgba(47, 54, 64, 0.6);
+  border-radius: 5px;
+  overflow: auto;
+  max-height: 600px; }
+  .verse p {
     font-family: "Spicy Rice", cursive;
     color: #dcdde1;
-    text-shadow: 1px 1px #000; }
+    padding: .5em; }
 
 footer p {
   color: #dcdde1;
   font-size: 2em; }
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 2vh; } }
 
 /*# sourceMappingURL=style.css.map */
