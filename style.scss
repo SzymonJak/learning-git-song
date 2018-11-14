@@ -1,8 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+
+$fonts: 'Spicy Rice', cursive;
+$nav-footer-colour: #2f3640;
+$text-colour: #dcdde1;
+
+%nav-footer-style {
+    background-color: $nav-footer-colour;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url("https://images.unsplash.com/photo-1514125669375-59ee3985d08b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=87a32c1192a51ef5b126e3c1bda20024&auto=format&fit=crop&w=3034&q=80");
-    
+    font: $fonts;
 }
 
 .container {
+    background-image: url("https://images.unsplash.com/photo-1514125669375-59ee3985d08b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=87a32c1192a51ef5b126e3c1bda20024&auto=format&fit=crop&w=3034&q=80");
     max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    @extend %nav-footer-style;
+
+    i {
+        color: $text-colour
+        font-size: 2em;
+    }
+}
+
+
+
+footer {
+    @extend %nav-footer-style;
+
+    p {
+        color: $text-colour
+        font-size: 2em;
+    }
 }
