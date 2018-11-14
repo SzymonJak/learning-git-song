@@ -6,6 +6,7 @@ $text-colour: #dcdde1;
 
 %nav-footer-style {
     background-color: $nav-footer-colour;
+    opacity: .7;
     height: 3em;
     line-height: 3em;
     text-align: center;
@@ -30,18 +31,36 @@ nav {
     @extend %nav-footer-style;
 
     i {
-        color: $text-colour
+        color: $text-colour;
         font-size: 2em;
     }
 }
 
+.hero {
+    width: 100%;
+	height: 30vh;
+	padding-top: 10vh;
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1512706150310-80ce897c3294?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=109355f68f6862f13a6cacf4ab7a0aa5&auto=format&fit=crop&w=2850&q=80");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 
+    h1, h2 {
+        color: $text-colour;
+        font: {
+            family: $fonts;
+            weight: bold;
+            size: 200%;
+        } 
+    }
+}
 
 footer {
     @extend %nav-footer-style;
 
     p {
-        color: $text-colour
+        color: $text-colour;
         font-size: 2em;
     }
 }
