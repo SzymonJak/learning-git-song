@@ -48,11 +48,24 @@ nav {
 
     h1, h2 {
         color: $text-colour;
+        text-shadow: 2px 2px #000;
+
         font: {
             family: $fonts;
             weight: bold;
             size: 200%;
         } 
+    }
+}
+
+section {
+    padding: .5em;
+    text-align: center;
+
+    p {
+        font-family: $fonts;
+        color: $text-colour;
+        text-shadow: 1px 1px #000;
     }
 }
 

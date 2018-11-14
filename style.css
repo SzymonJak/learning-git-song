@@ -33,9 +33,18 @@ nav i {
   overflow: hidden; }
   .hero h1, .hero h2 {
     color: #dcdde1;
+    text-shadow: 2px 2px #000;
     font-family: "Spicy Rice", cursive;
     font-weight: bold;
     font-size: 200%; }
+
+section {
+  padding: .5em;
+  text-align: center; }
+  section p {
+    font-family: "Spicy Rice", cursive;
+    color: #dcdde1;
+    text-shadow: 1px 1px #000; }
 
 footer p {
   color: #dcdde1;
