@@ -1,0 +1,5 @@
+#autoprefixer
+node_modules/.bin/autoprefixer-cli -o main.prefixed.css main.css
+
+#nu-html-checker
+node_modules/.bin/html-validator --file=*.html
